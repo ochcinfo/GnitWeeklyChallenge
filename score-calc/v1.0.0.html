@@ -14,13 +14,14 @@ marked: v12.0.0
   </head>
   <body>
     <p>Gnit Weekly Challenge 配点公式</p>
+    <p>diff=1~10</p>
     <div id="calc_view_zone">$$100(\text{diff}-\text{diff}_{\text{min}}+1) + \min\left(\dfrac{100(\text{diff}-\text{diff}_{\text{min}}+1)}{5}, 10\left\lceil \dfrac{ \left( \left\lfloor( 10\left(\ln \left( \max(\text{diff}^{\ 1.08}-0.8\text{ diff}_\text{average},1) \right) )^{1.03125\pi}\right)\right\rfloor \right) }{10} \right\rceil \right)$$</div>
     <br>
     <span>問題のdiff(難易度)を改行区切りで入力:　</span>
-    <textarea placeholder="diffを改行区切りで入力" oninput="ch()" id="i"></textarea>
+    <textarea placeholder="diffを改行区切りで入力" oninput="ch()" id="i" rows="10" style="width:50%;"></textarea>
     <br>
     <br>
-    <textarea disabled placeholder="ここにスコアが出力されます" id="o"></textarea>
+    <textarea disabled placeholder="ここにスコアが出力されます" id="o" rows="20"></textarea>
   </body>
   <script defer>
         document.addEventListener("DOMContentLoaded", function() {
